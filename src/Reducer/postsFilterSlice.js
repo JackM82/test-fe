@@ -12,7 +12,7 @@ export const getPostsFiltered = createAsyncThunk(
     ////rejectWithValue gestisce errore e lo mostra {rejectWithValue}
     async(paramSlice,{rejectWithValue})=> {         
         try {
-            const data = await fetch(`http://localhost:5050/posts/bytitle/${paramSlice}`) //${paramSlice}
+            const data = await fetch(`https://epiblog-jm.onrender.com/posts/bytitle/${paramSlice}`) //${paramSlice}
             const response = await data.json()
             console.log(response)
             return response

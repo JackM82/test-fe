@@ -10,7 +10,7 @@ export const loginRequest = createAsyncThunk(
     "login/userLogin",
     async (data) => {
         try {
-            const response = await fetch('http://localhost:5050/login',{
+            const response = await fetch('https://epiblog-jm.onrender.com/login',{
                 method: 'POST',                
                 headers: {
                 "Content-Type": 'application/json',

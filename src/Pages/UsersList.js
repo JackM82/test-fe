@@ -14,7 +14,7 @@ const UsersList = () => {
 
   const getUsers = async () => {
     try {
-        const response = await fetch(`http://localhost:5050/users?page=${page}&pageSize=${pageSize}`)
+        const response = await fetch(`https://epiblog-jm.onrender.com/users?page=${page}&pageSize=${pageSize}`)
         const data = await response.json()
         //console.log(data)
         setData(data)
