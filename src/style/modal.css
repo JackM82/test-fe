@@ -1,0 +1,9 @@
+.myModal{
+    display: block;
+    padding: 20px;
+    position: absolute;   
+    background-color: rgba(0, 0, 0, 0.726);
+    left:10%;
+    bottom:10%;
+    z-index: 10;
+}
